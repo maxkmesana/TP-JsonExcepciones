@@ -14,9 +14,5 @@ public class Main {
         Menus menuPrincipal = new Menus(controllerContacto);
 
         menuPrincipal.menu();
-
-        repoContacto.deleteAll("jorge");
-
-        controllerContacto.mostrar();
     }
 }
