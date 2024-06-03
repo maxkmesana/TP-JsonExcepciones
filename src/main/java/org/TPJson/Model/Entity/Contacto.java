@@ -16,10 +16,14 @@ public class Contacto {
         this.email = email;
     }
 
+    public static void setCont(int cont) {
+        Contacto.cont = cont;
+    }
+
     /**
      *
      * @param id ID PARA SER BUSCADO
-     * SOLO DEBERIA SER USADO PARA HACER BUSQUEDAS POR ID.D
+     * SOLO DEBERIA SER USADO PARA HACER BUSQUEDAS POR ID.
      */
     public Contacto(int id){
         this.email = "";

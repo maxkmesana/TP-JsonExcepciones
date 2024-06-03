@@ -14,6 +14,9 @@ public class ControllerContacto {
     public ControllerContacto(ViewContacto viewContacto, Agenda repoContacto) {
         this.viewContacto = viewContacto;
         this.repoContacto = repoContacto;
+
+        int lastId = repoContacto.getLastId();
+        Contacto.setCont(lastId);
     }
 
     public void create(){
