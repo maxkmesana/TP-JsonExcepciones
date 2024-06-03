@@ -76,11 +76,15 @@ public class Agenda {
         return set;
     }
 
-    public void deleteAll(String nombreEliminar){
+    // no se usa pero no se de que otra manera solucionarlo
+    public int getLastId(){
+        int ultimoId = Integer.MIN_VALUE;
         for (Contacto c : set){
-            if(c.getNombre().equals(nombreEliminar)){
-                set.remove(c);
+            if(c.getId() > ultimoId){
+                ultimoId = c.getId();
             }
         }
+
+        return ultimoId;
     }
 }
